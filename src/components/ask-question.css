@@ -1,0 +1,46 @@
+/* ask-question.css */
+
+.container {
+  width: 100%; /* Adjust to full width or specific width as needed */
+  margin: 0; /* Remove margin if it's contributing extra space */
+  padding: 0; /* Remove padding to prevent spacing around the component */
+  box-shadow: none; /* Optional: Remove box shadow if not needed */
+  border: none; /* Optional: Remove border */
+  /* Optional: Add padding and border to individual elements instead */
+}
+
+.title {
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Adjust alignment */
+  margin: 0; /* Remove bottom margin to prevent extra space */
+  width: 100%; /* Ensure form takes full width */
+}
+
+.input {
+  padding: 10px;
+  margin-right: 10px;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Optional: Add a margin for the response section */
+.response {
+  margin-top: 10px;
+}
