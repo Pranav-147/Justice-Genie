@@ -5,7 +5,7 @@ from langchain_community.vectorstores import FAISS
 import os
 import google.generativeai as genai
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyC9O_P4M9OFdofX5pl9Dzk0dSvBiD8dH9A"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyCcVBirCHxNl0V6lt4QF-Gj8qwnh7aKeoA"
 os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
