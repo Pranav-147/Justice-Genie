@@ -1,0 +1,66 @@
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Keep the original overlay background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: rgba(28, 30, 58, 1); /* New background color */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+}
+
+
+.popup h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #fff; /* Text color to contrast with dark background */
+}
+
+.feedbackInput {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5rem; /* Increased font size */
+    background-color: rgba(28, 30, 58, 1); /* Set the same background as popup */
+    color: #fff; /* Ensure the text is visible on the dark background */
+    border-color: #444; /* Optional: Slightly darker border for better visibility */
+}
+
+
+/* Styling the buttons within the .popup class */
+.popup .btn,
+.popup .submitBtn,
+.popup .closeBtn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #5A4BFF; /* Updated button background color */
+    color: #fff; /* Ensure button text is white */
+}
+
+/* For the submit button when disabled */
+.popup .submitBtn:disabled {
+    background: #9e9e9e;
+    cursor: not-allowed;
+}
+
+.popupActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
